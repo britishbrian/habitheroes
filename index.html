@@ -4,76 +4,112 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Habit Heroes</title>
-		
+
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--Download later-->
-	
-	<style> 
-	
+
+	<style>
+
 	#battlefield {
-		border-style: solid; 
-		height: 60%; 
-		width: 65%; 
-		position: absolute; 
+		border-style: solid;
+		height: 60%;
+		width: 50%;
+		position: absolute;
 		top: 12%;
 	}
-	
-	
+
+
 	#summonButton0 {
 		position: absolute;
 		left: 5%;
 		bottom: 20%;
-	
+
 	}
-	
+
 	#summonButton1 {
 		position: absolute;
 		left: 5%;
 		bottom: 12%;
-	
+
 	}
-	
+
 	#summonButton2 {
 		position: absolute;
 		left: 5%;
 		bottom: 4%;
-	
+
 	}
-	
+
 	.task {
 		position: absolute;
 		top: 12%;
 		right: 7%;
 		border-style: solid;
 		height: 75%;
-		width: 25%;
-	
+		width: 40%;
+
 	}
-	
+
 	.addTask {
 		position: absolute;
-		bottom: 12%;
-		left: 40%;
-	
+		bottom: 2%;
+		left: 65%;
+
 	}
-	
-	</style> 
+
+  #queue {
+    border-style: solid;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+
+  }
+
+  #task01 {
+    width: 100%;
+    top: 10%;
+
+  }
+
+  #icon01 {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+
+}
+
+  #heroIcon {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+
+  }
+
+  #monsterIcon {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+
+  }
+
+	</style>
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
-		
+
 	<div class="w3-row-padding">
     <div class="w3-quarter">
     <div id="summonPointsDisplay">
 	<span>SP: 0</span>
 	</div>
     </div>
-	
+
     <div class="w3-quarter">
 	<div id="goldDisplay">
 	<span>Gold: 0</span>
 	</div>
     </div>
-	
+
     <div class="w3-quarter w3-button w3-small">
 	<div id="storeButton">
 	<span>Store</span>
@@ -85,6 +121,17 @@
 <!--Battlefield-->
 <div class="w3-row-padding">
 <div id="battlefield">
+<div id="heroIcon">
+<span>F</span>
+</div>
+<div id="monsterIcon">
+<span>G</span>
+</div>
+<div id="queue">
+<div id="icon01">
+<span>F</span>
+</div>
+</div>
 </div>
 </div>
 
@@ -96,7 +143,7 @@
 	 <span>Basic Summon - 3 SP</span>
 	 </div>
     </div>
-	
+
     <div class="w3-third w3-button w3-small">
     <div class="summonButton" id="summonButton1">
 	<span>Super Summon - 12 SP</span>
@@ -114,13 +161,17 @@
 <div class="w3-row-padding">
 <div class="task">
 <span>TASKS</span>
+<div id="task01" class="w3-button 3-small w3-green">
+<span>Walk 1 Mile</span>
+</div>
 </div>
 
 <!--Add task-->
-<div class="w3-button w3-small addTask">
+<div class="w3-button w3-small w3-teal addTask">
 <div>
 <span>ADD TASK</span>
 </div>
 </div>
+
 </body>
 </html>
