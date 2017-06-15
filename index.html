@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Habit Heroes</title>
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--Download later-->
+	
+	<style> 
+	
+	#battlefield {
+		border-style: solid; 
+		height: 60%; 
+		width: 65%; 
+		position: absolute; 
+		top: 12%;
+	}
+	
+	
+	#summonButton0 {
+		position: absolute;
+		left: 5%;
+		bottom: 20%;
+	
+	}
+	
+	#summonButton1 {
+		position: absolute;
+		left: 5%;
+		bottom: 12%;
+	
+	}
+	
+	#summonButton2 {
+		position: absolute;
+		left: 5%;
+		bottom: 4%;
+	
+	}
+	
+	.task {
+		position: absolute;
+		top: 12%;
+		right: 7%;
+		border-style: solid;
+		height: 75%;
+		width: 25%;
+	
+	}
+	
+	.addTask {
+		position: absolute;
+		bottom: 12%;
+		left: 40%;
+	
+	}
+	
+	</style> 
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+		
+	<div class="w3-row-padding">
+    <div class="w3-quarter">
+    <div id="summonPointsDisplay">
+	<span>SP: 0</span>
+	</div>
+    </div>
+	
+    <div class="w3-quarter">
+	<div id="goldDisplay">
+	<span>Gold: 0</span>
+	</div>
+    </div>
+	
+    <div class="w3-quarter w3-button w3-small">
+	<div id="storeButton">
+	<span>Store</span>
+	</div>
+    </div>
+</div>
 
+
+<!--Battlefield-->
+<div class="w3-row-padding">
+<div id="battlefield">
+</div>
+</div>
+
+
+<!--Summon Buttons-->
+<div class="w3-row-padding">
+    <div class="w3-third w3-button w3-small">
+     <div class="summonButton" id="summonButton0">
+	 <span>Basic Summon - 3 SP</span>
+	 </div>
+    </div>
+	
+    <div class="w3-third w3-button w3-small">
+    <div class="summonButton" id="summonButton1">
+	<span>Super Summon - 12 SP</span>
+	</div>
+    </div>
+	<div class="w3-third w3-button w3-small">
+    <div class="summonButton" id="summonButton2">
+	<span>Ultra Summon - 25 SP</span>
+	</div>
+    </div>
+</div>
+
+
+<!--Tasks-->
+<div class="w3-row-padding">
+<div class="task">
+<span>TASKS</span>
+</div>
+
+<!--Add task-->
+<div class="w3-button w3-small addTask">
+<div>
+<span>ADD TASK</span>
+</div>
+</div>
+</body>
+</html>
